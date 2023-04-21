@@ -1,0 +1,13 @@
+package users;
+
+import com.intuit.karate.Runner;
+import org.junit.jupiter.api.Test;
+
+public class ManagementTest {
+
+    @Test
+    public void testParrallel(){
+        Runner.path("classpath:users").tags("~@ignore").parallel(4);
+    }
+
+}
